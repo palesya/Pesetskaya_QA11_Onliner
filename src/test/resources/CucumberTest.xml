@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Onliver" parallel="tests">
+    <parameter name="config" value="onliner"/>
+    <listeners>
+        <listener class-name="TestNGUtils.Listener"/>
+    </listeners>
+
+    <test name="Login Page">
+        <classes>
+            <class name="OnlinerTests.OnlinerCucumberOptions"/>
+        </classes>
+    </test>
+</suite>
