@@ -1,6 +1,5 @@
 package BaseObjects;
 
-
 import Properties.PropertyReader;
 import TestNGUtils.ListenerSelenide;
 import com.codeborne.selenide.Configuration;

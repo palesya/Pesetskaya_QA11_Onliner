@@ -4,11 +4,9 @@ import BaseObjects.SelenideBaseTest;
 import Entity.User;
 import PageObjects.OnlinerSelenide.CatalogPage;
 import PageObjects.OnlinerSelenide.RegisterPage;
-import lombok.extern.log4j.Log4j;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-@Log4j
 public class TestsSelenide extends SelenideBaseTest {
 
     @Test(description = "Check allowed password length",

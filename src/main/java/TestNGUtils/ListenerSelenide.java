@@ -1,6 +1,5 @@
 package TestNGUtils;
 
-
 import Properties.PropertyReader;
 import com.codeborne.selenide.Configuration;
 import org.testng.ITestContext;

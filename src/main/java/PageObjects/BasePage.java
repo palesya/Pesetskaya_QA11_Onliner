@@ -39,11 +39,17 @@ public abstract class BasePage {
         return this;
     }
 
+    public BasePage open(String url) {
+        log.debug("Open page " + url);
+        driver.get(url);
+        return this;
+    }
+
     protected WebElement getWebElement(By element) {
         return driver.findElement(element);
     }
 
-    private BasePage click(By element) {
+    protected BasePage click(By element) {
         getWebElement(element).click();
         return this;
     }

@@ -5,9 +5,9 @@ import PageObjects.Onliner.*;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class Test1 extends BaseTest {
+public class Tests extends BaseTest {
 
-    @BeforeMethod
+   @BeforeMethod
     public void openCatalogPage() {
         get(CatalogPage.class).open();
     }

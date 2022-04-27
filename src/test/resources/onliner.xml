@@ -5,7 +5,7 @@
 
     <test name="Onliner">
         <classes>
-            <class name="OnlinerTests.Test1"/>
+            <class name="OnlinerTests.Tests"/>
         </classes>
     </test>
 </suite>
