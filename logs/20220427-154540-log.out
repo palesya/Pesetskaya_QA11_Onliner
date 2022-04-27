@@ -1,0 +1,13 @@
+2022-04-27 15:45:43.240 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 15:45:46.131 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: div[class$=text]
+2022-04-27 15:45:46.200 [TestNG-tests-1] PageObjects.Onliner.CatalogPage.clickEnterButton(CatalogPage.java:20) - Enter button was clicked.
+2022-04-27 15:45:46.200 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [href$='registration']
+2022-04-27 15:45:47.604 [TestNG-tests-1] PageObjects.BasePage.compareCurrentUrlWithExpected(BasePage.java:91) - Compare current url https://profile.onliner.by/registration
+2022-04-27 15:45:47.771 [TestNG-tests-1] PageObjects.Onliner.RegisterPage.enterEmail(RegisterPage.java:44) - Email was entered.
+2022-04-27 15:45:47.772 [TestNG-tests-1] PageObjects.BasePage.enter(BasePage.java:111) - Enter [            12]
+2022-04-27 15:45:47.836 [TestNG-tests-1] PageObjects.BasePage.enter(BasePage.java:111) - Enter [            12]
+2022-04-27 15:45:47.886 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: span[class*='faux']
+2022-04-27 15:45:47.922 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //div/*[@type='submit']
+2022-04-27 15:45:47.978 [TestNG-tests-1] PageObjects.Onliner.RegisterPage.clickSubmitButton(RegisterPage.java:50) - Submit button was clicked.
+2022-04-27 15:45:48.188 [TestNG-tests-1] PageObjects.BasePage.compareErrorWithExpected(BasePage.java:97) - Compare error Пароль должен быть от 8 до 64 символов
+2022-04-27 15:45:48.200 [TestNG-tests-1] PageObjects.BasePage.screenshot(BasePage.java:117) - Take screenshot to directory: src/test/java/Screenshots

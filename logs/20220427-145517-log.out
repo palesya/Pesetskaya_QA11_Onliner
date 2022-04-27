@@ -1,0 +1,84 @@
+2022-04-27 14:55:20.480 [TestNG-tests-2] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 14:55:22.785 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: div[class$=text]
+2022-04-27 14:55:22.887 [TestNG-tests-2] PageObjects.Onliner.CatalogPage.clickEnterButton(CatalogPage.java:20) - Enter button was clicked.
+2022-04-27 14:55:22.889 [TestNG-tests-2] PageObjects.BasePage.isElementExists(BasePage.java:64) - Is element exist: By.cssSelector: [class='auth-entry']
+2022-04-27 14:55:22.922 [TestNG-tests-2] PageObjects.Onliner.LoginPage.checkAuthenticationFormIsOpened(LoginPage.java:16) - Authentication form is opened.
+2022-04-27 14:55:22.936 [TestNG-tests-2] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 14:55:24.452 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: div[class$=text]
+2022-04-27 14:55:24.550 [TestNG-tests-2] PageObjects.Onliner.CatalogPage.clickEnterButton(CatalogPage.java:20) - Enter button was clicked.
+2022-04-27 14:55:24.654 [TestNG-tests-2] PageObjects.Onliner.LoginPage.enterPassword(LoginPage.java:21) - Password was entered.
+2022-04-27 14:55:24.655 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //div/*[@type='submit']
+2022-04-27 14:55:24.743 [TestNG-tests-2] PageObjects.Onliner.LoginPage.clickSubmitButton(LoginPage.java:40) - Submit button was clicked.
+2022-04-27 14:55:24.743 [TestNG-tests-2] PageObjects.BasePage.isElementExists(BasePage.java:64) - Is element exist: By.cssSelector: [class*=description_error]
+2022-04-27 14:55:24.969 [TestNG-tests-2] PageObjects.BasePage.compareErrorWithExpected(BasePage.java:97) - Compare error Укажите ник или e-mail
+2022-04-27 14:55:24.984 [TestNG-tests-2] PageObjects.Onliner.LoginPage.checkErrorForEmptyEmail(LoginPage.java:34) - Check error for empty email.
+2022-04-27 14:55:24.986 [TestNG-tests-2] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 14:55:25.893 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.CatalogPage.clickEnterButton(CatalogPage.java:17) - Enter button was clicked.
+2022-04-27 14:55:25.936 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.CatalogPage.clickEnterButton(CatalogPage.java:17) - Enter button was clicked.
+2022-04-27 14:55:26.251 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //li[@data-id='3']
+2022-04-27 14:55:26.386 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'Уборка')]
+2022-04-27 14:55:26.520 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='dropdown'] [href$='vacuumcleaner']
+2022-04-27 14:55:27.358 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.CatalogPage.goToRegistrationPage(CatalogPage.java:24) - Registration page is opened.
+2022-04-27 14:55:27.521 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.CatalogPage.goToRegistrationPage(CatalogPage.java:24) - Registration page is opened.
+2022-04-27 14:55:27.572 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.RegisterPage.enterEmail(RegisterPage.java:55) - Email entered alesya@gmail.com
+2022-04-27 14:55:27.736 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.RegisterPage.enterEmail(RegisterPage.java:55) - Email entered alesya@gmail.com
+2022-04-27 14:55:27.844 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.RegisterPage.enterPasswordAndRepeatPassword(RegisterPage.java:29) - Password and RepeatPassword entered 11111111
+2022-04-27 14:55:27.899 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.RegisterPage.checkCheckbox(RegisterPage.java:35) - Checkbox was checked.
+2022-04-27 14:55:27.968 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.RegisterPage.clickSubmitButton(RegisterPage.java:61) - Submit button was clicked.
+2022-04-27 14:55:28.351 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.RegisterPage.enterPasswordAndRepeatPassword(RegisterPage.java:29) - Password and RepeatPassword entered 1111111111111111111111111111111111111111111111111111111111111111
+2022-04-27 14:55:28.396 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.RegisterPage.checkCheckbox(RegisterPage.java:35) - Checkbox was checked.
+2022-04-27 14:55:28.454 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.RegisterPage.clickSubmitButton(RegisterPage.java:61) - Submit button was clicked.
+2022-04-27 14:55:28.529 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.RegisterPage.checkSuccessRegistration(RegisterPage.java:76) - Check success registration.
+2022-04-27 14:55:29.010 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.RegisterPage.checkSuccessRegistration(RegisterPage.java:76) - Check success registration.
+2022-04-27 14:55:30.161 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class$=hot]
+2022-04-27 14:55:30.329 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class$=hot]
+2022-04-27 14:55:30.474 [TestNG-tests-2] PageObjects.Onliner.ProductsPage.checkHintText(ProductsPage.java:30) - Check hint for fire sign.
+2022-04-27 14:55:30.476 [TestNG-tests-2] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 14:55:32.012 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //li[@data-id='3']
+2022-04-27 14:55:32.178 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'Уборка')]
+2022-04-27 14:55:32.356 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='dropdown'] [href$='vacuumcleaner']
+2022-04-27 14:55:33.480 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.CatalogPage.clickEnterButton(CatalogPage.java:17) - Enter button was clicked.
+2022-04-27 14:55:34.081 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.CatalogPage.clickEnterButton(CatalogPage.java:17) - Enter button was clicked.
+2022-04-27 14:55:34.306 [TestNG-tests-2] PageObjects.BasePage.isElementExists(BasePage.java:64) - Is element exist: By.cssSelector: [class$='delivery'] [class$='content']
+2022-04-27 14:55:34.319 [TestNG-tests-2] PageObjects.Onliner.ProductsPage.checkDialogWindowAvailable(ProductsPage.java:36) - Check dialog window is available.
+2022-04-27 14:55:34.320 [TestNG-tests-2] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='delivery'] [class$='content'] [class*='link']
+2022-04-27 14:55:34.357 [TestNG-tests-2] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='delivery'] [class$='content'] [class*='button']
+2022-04-27 14:55:34.391 [TestNG-tests-2] PageObjects.Onliner.ProductsPage.checkButtonNamesOnDialogWindow(ProductsPage.java:43) - Check button names on dialog window.
+2022-04-27 14:55:34.396 [TestNG-tests-2] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 14:55:35.417 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.CatalogPage.goToRegistrationPage(CatalogPage.java:24) - Registration page is opened.
+2022-04-27 14:55:35.497 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.RegisterPage.enterEmail(RegisterPage.java:55) - Email entered alesya@gmail.com
+2022-04-27 14:55:36.133 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.CatalogPage.goToRegistrationPage(CatalogPage.java:24) - Registration page is opened.
+2022-04-27 14:55:36.199 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.RegisterPage.enterEmail(RegisterPage.java:55) - Email entered alesya@gmail.com
+2022-04-27 14:55:36.298 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.RegisterPage.enterPasswordAndRepeatPassword(RegisterPage.java:29) - Password and RepeatPassword entered 1111111
+2022-04-27 14:55:36.360 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.RegisterPage.checkCheckbox(RegisterPage.java:35) - Checkbox was checked.
+2022-04-27 14:55:36.369 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.RegisterPage.enterPasswordAndRepeatPassword(RegisterPage.java:29) - Password and RepeatPassword entered 11111111111111111111111111111111111111111111111111111111111111111
+2022-04-27 14:55:36.418 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.RegisterPage.checkCheckbox(RegisterPage.java:35) - Checkbox was checked.
+2022-04-27 14:55:36.436 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.RegisterPage.clickSubmitButton(RegisterPage.java:61) - Submit button was clicked.
+2022-04-27 14:55:36.454 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //li[@data-id='3']
+2022-04-27 14:55:36.485 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.RegisterPage.clickSubmitButton(RegisterPage.java:61) - Submit button was clicked.
+2022-04-27 14:55:36.575 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'Уборка')]
+2022-04-27 14:55:36.708 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='dropdown'] [href$='vacuumcleaner']
+2022-04-27 14:55:36.763 [TestNG-PoolService-1] PageObjects.OnlinerSelenide.RegisterPage.checkErrorForPasswordLength(RegisterPage.java:42) - Error appeared Пароль должен быть от 8 до 64 символов
+2022-04-27 14:55:36.918 [TestNG-PoolService-0] PageObjects.OnlinerSelenide.RegisterPage.checkErrorForPasswordLength(RegisterPage.java:42) - Error appeared Пароль должен быть от 8 до 64 символов
+2022-04-27 14:55:38.356 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*=product] [class*=image]
+2022-04-27 14:55:41.118 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'В корзину')]
+2022-04-27 14:55:41.499 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='control'] [class$='recommended__button']
+2022-04-27 14:55:44.215 [TestNG-tests-2] PageObjects.BasePage.compareCurrentUrlWithExpected(BasePage.java:91) - Compare current url https://cart.onliner.by/
+2022-04-27 14:55:44.217 [TestNG-tests-2] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='ammount']
+2022-04-27 14:55:45.185 [TestNG-tests-2] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 14:55:46.394 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [title='Корзина']
+2022-04-27 14:55:47.309 [TestNG-tests-2] PageObjects.BasePage.compareCurrentUrlWithExpected(BasePage.java:91) - Compare current url https://cart.onliner.by/
+2022-04-27 14:55:47.553 [TestNG-tests-2] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='extra']
+2022-04-27 14:55:48.155 [TestNG-tests-2] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 14:55:49.322 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: div[class$=text]
+2022-04-27 14:55:49.398 [TestNG-tests-2] PageObjects.Onliner.CatalogPage.clickEnterButton(CatalogPage.java:20) - Enter button was clicked.
+2022-04-27 14:55:49.398 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [href$='registration']
+2022-04-27 14:55:50.613 [TestNG-tests-2] PageObjects.BasePage.compareCurrentUrlWithExpected(BasePage.java:91) - Compare current url https://profile.onliner.by/registration
+2022-04-27 14:55:50.665 [TestNG-tests-2] PageObjects.Onliner.RegisterPage.enterEmail(RegisterPage.java:44) - Email was entered.
+2022-04-27 14:55:50.666 [TestNG-tests-2] PageObjects.BasePage.enter(BasePage.java:111) - Enter [            12]
+2022-04-27 14:55:50.724 [TestNG-tests-2] PageObjects.BasePage.enter(BasePage.java:111) - Enter [            12]
+2022-04-27 14:55:50.772 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: span[class*='faux']
+2022-04-27 14:55:50.804 [TestNG-tests-2] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //div/*[@type='submit']
+2022-04-27 14:55:50.855 [TestNG-tests-2] PageObjects.Onliner.RegisterPage.clickSubmitButton(RegisterPage.java:50) - Submit button was clicked.
+2022-04-27 14:55:50.998 [TestNG-tests-2] PageObjects.BasePage.compareErrorWithExpected(BasePage.java:97) - Compare error Пароль должен быть от 8 до 64 символов
+2022-04-27 14:55:51.007 [TestNG-tests-2] PageObjects.BasePage.screenshot(BasePage.java:117) - Take screenshot to directory: src/test/java/Screenshots

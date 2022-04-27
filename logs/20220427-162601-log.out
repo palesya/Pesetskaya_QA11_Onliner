@@ -1,0 +1,43 @@
+2022-04-27 16:26:04.395 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 16:26:07.199 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: div[class$=text]
+2022-04-27 16:26:07.277 [TestNG-tests-1] PageObjects.Onliner.CatalogPage.clickEnterButton(CatalogPage.java:20) - Enter button was clicked.
+2022-04-27 16:26:07.278 [TestNG-tests-1] PageObjects.BasePage.isElementExists(BasePage.java:64) - Is element exist: By.cssSelector: [class='auth-entry']
+2022-04-27 16:26:07.305 [TestNG-tests-1] PageObjects.Onliner.LoginPage.checkAuthenticationFormIsOpened(LoginPage.java:16) - Authentication form is opened.
+2022-04-27 16:26:07.318 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 16:26:08.997 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: div[class$=text]
+2022-04-27 16:26:09.057 [TestNG-tests-1] PageObjects.Onliner.CatalogPage.clickEnterButton(CatalogPage.java:20) - Enter button was clicked.
+2022-04-27 16:26:09.125 [TestNG-tests-1] PageObjects.Onliner.LoginPage.enterPassword(LoginPage.java:21) - Password was entered.
+2022-04-27 16:26:09.125 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //div/*[@type='submit']
+2022-04-27 16:26:09.189 [TestNG-tests-1] PageObjects.Onliner.LoginPage.clickSubmitButton(LoginPage.java:40) - Submit button was clicked.
+2022-04-27 16:26:09.189 [TestNG-tests-1] PageObjects.BasePage.isElementExists(BasePage.java:64) - Is element exist: By.cssSelector: [class*=description_error]
+2022-04-27 16:26:09.419 [TestNG-tests-1] PageObjects.BasePage.compareErrorWithExpected(BasePage.java:97) - Compare error Укажите ник или e-mail
+2022-04-27 16:26:09.430 [TestNG-tests-1] PageObjects.Onliner.LoginPage.checkErrorForEmptyEmail(LoginPage.java:34) - Check error for empty email.
+2022-04-27 16:26:09.432 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 16:26:10.830 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //li[@data-id='3']
+2022-04-27 16:26:10.952 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'Уборка')]
+2022-04-27 16:26:11.059 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='dropdown'] [href$='vacuumcleaner']
+2022-04-27 16:26:14.892 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class$=hot]
+2022-04-27 16:26:15.910 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class$=hot]
+2022-04-27 16:26:16.056 [TestNG-tests-1] PageObjects.Onliner.ProductsPage.checkHintText(ProductsPage.java:30) - Check hint for fire sign.
+2022-04-27 16:26:16.059 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 16:26:17.838 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //li[@data-id='3']
+2022-04-27 16:26:17.947 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'Уборка')]
+2022-04-27 16:26:18.050 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='dropdown'] [href$='vacuumcleaner']
+2022-04-27 16:26:20.258 [TestNG-tests-1] PageObjects.BasePage.isElementExists(BasePage.java:64) - Is element exist: By.cssSelector: [class$='delivery'] [class$='content']
+2022-04-27 16:26:20.267 [TestNG-tests-1] PageObjects.Onliner.ProductsPage.checkDialogWindowAvailable(ProductsPage.java:36) - Check dialog window is available.
+2022-04-27 16:26:20.267 [TestNG-tests-1] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='delivery'] [class$='content'] [class*='link']
+2022-04-27 16:26:20.287 [TestNG-tests-1] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='delivery'] [class$='content'] [class*='button']
+2022-04-27 16:26:20.305 [TestNG-tests-1] PageObjects.Onliner.ProductsPage.checkButtonNamesOnDialogWindow(ProductsPage.java:43) - Check button names on dialog window.
+2022-04-27 16:26:20.307 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 16:26:22.250 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //li[@data-id='3']
+2022-04-27 16:26:22.340 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'Уборка')]
+2022-04-27 16:26:22.466 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='dropdown'] [href$='vacuumcleaner']
+2022-04-27 16:26:24.305 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*=product] [class*=image]
+2022-04-27 16:26:28.023 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'В корзину')]
+2022-04-27 16:26:28.475 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='control'] [class$='recommended__button']
+2022-04-27 16:26:30.940 [TestNG-tests-1] PageObjects.BasePage.compareCurrentUrlWithExpected(BasePage.java:91) - Compare current url https://cart.onliner.by/
+2022-04-27 16:26:30.942 [TestNG-tests-1] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='ammount']
+2022-04-27 16:26:31.147 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-27 16:26:32.294 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [title='Корзина']
+2022-04-27 16:26:33.173 [TestNG-tests-1] PageObjects.BasePage.compareCurrentUrlWithExpected(BasePage.java:91) - Compare current url https://cart.onliner.by/
+2022-04-27 16:26:33.344 [TestNG-tests-1] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='extra']
