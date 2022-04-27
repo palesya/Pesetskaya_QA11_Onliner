@@ -180,9 +180,7 @@
                     <argLine>
                         -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar -Xmx256m
                     </argLine>
-                    <systemPropertyVariables>
-                        <allure.results.directory>../Pesetskaya_QA11_Onliner/target/allure-results</allure.results.directory>
-                    </systemPropertyVariables>
+
                 </configuration>
                 <dependencies>
                     <dependency>
