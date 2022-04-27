@@ -6,7 +6,7 @@ pipeline {
         jdk "JDK"
     }
     environment {
-        SUITE = "src/test/resources/${params.Suite}.xml"
+        SUITE = 'src/test/resources/${params.Suite}.xml'
     }
 
     stages {
