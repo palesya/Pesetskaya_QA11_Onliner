@@ -1,24 +1,24 @@
 pipeline {
     agent any
 
-    tools{
+    tools {
         maven "MAVEN"
+        jdk "JDK"
     }
-
-    environment{
-        SUITE="src/test/resources/${params.Suite}.xml"
+    environment {
+        SUITE = "src/test/resources/${params.Suite}.xml"
     }
 
     stages {
         stage('Build') {
             steps {
-               bat 'mvn clean'
+                bat 'mvn clean'
             }
         }
         stage('Test run') {
             steps {
-                echo '-----------------------------Started${evn.SUITE}--------------------'
-               bat 'mvn clean test -Dsuite=${env.SUITE}'
+                echo "---------------------------------------------Started ${env.SUITE} -----------------------------------------------------"
+                bat 'mvn test -Dsuite=${env.SUITE}'
             }
         }
         stage('Reports') {
@@ -30,14 +30,9 @@ pipeline {
                         properties: [],
                         reportBuildPolicy: 'ALWAYS',
                         results: [[path: 'target/allure-results']]
-                        ])
-                        }
+                    ])
+                }
             }
-        }
-        post('Publish report') {
-        always {
-        script { allure([ includeProperties: false, jdk: '', properties: [], reportBuildPolicy: 'ALWAYS', results: [[path: './allure-results']] ]) }
-        }
         }
     }
 }
