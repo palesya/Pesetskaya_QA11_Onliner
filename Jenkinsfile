@@ -21,8 +21,8 @@ pipeline {
                 bat 'mvn test -Dsuite=${env.SUITE}'
             }
         }
-        stage('Reports') {
-            steps {
+        post {
+            always {
                 script {
                     allure([
                         includeProperties: false,
@@ -34,10 +34,5 @@ pipeline {
                 }
             }
         }
-    }
-    post('Publish report') {
-    always {
-    script { allure([ includeProperties: false, jdk: '', properties: [], reportBuildPolicy: 'ALWAYS', results: [[path: './allure-results']] ]) }
-    }
     }
 }
