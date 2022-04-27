@@ -6,25 +6,26 @@ pipeline {
         jdk "JDK"
     }
     environment {
-        SUITE = 'src/test/resources/${params.Suite}.xml'
+        SUITE = "src/test/resources/${params.Suite}.xml"
     }
 
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean'
+                bat 'mvn clean'
             }
         }
         stage('Test run') {
             steps {
-                echo "---------------------------------------------Started-----------------------------------------------------"
-                sh 'mvn test -Dsuite=${env.SUITE}'
+                echo "---------------------------------------------Started ${env.SUITE} -----------------------------------------------------"
+                bat 'mvn test -Dsuite=${env.SUITE}'
             }
         }
-        stage('Reports') {
-            steps {
-                script {
-                    allure([
+    }
+    post {
+        always {
+            script {
+                allure([
                         includeProperties: false,
                         jdk: '',
                         properties: [],
@@ -34,5 +35,4 @@ pipeline {
                 }
             }
         }
-    }
-}
+     }
