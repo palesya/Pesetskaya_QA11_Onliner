@@ -18,7 +18,7 @@ pipeline {
         stage('Test run') {
             steps {
                 echo "---------------------------------------------Started ${env.SUITE} -----------------------------------------------------"
-                sh 'mvn test -Dsuite=${env.SUITE}'
+                sh 'mvn test -Dsuite=$(env.SUITE)'
             }
         }
         stage('Reports') {
