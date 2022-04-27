@@ -12,20 +12,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'mvn clean'
+                sh 'mvn clean'
             }
         }
         stage('Test run') {
             steps {
                 echo "---------------------------------------------Started ${env.SUITE} -----------------------------------------------------"
-                bat 'mvn test -Dsuite=${env.SUITE}'
+                sh 'mvn test -Dsuite=${env.SUITE}'
             }
         }
-    }
-    post {
-        always {
-            script {
-                allure([
+        stage('Reports') {
+            steps {
+                script {
+                    allure([
                         includeProperties: false,
                         jdk: '',
                         properties: [],
@@ -35,4 +34,5 @@ pipeline {
                 }
             }
         }
-     }
+    }
+}
