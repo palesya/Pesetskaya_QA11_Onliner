@@ -21,10 +21,11 @@ pipeline {
                 bat 'mvn test -Dsuite=${env.SUITE}'
             }
         }
-        post {
-            always {
-                script {
-                    allure([
+    }
+    post {
+        always {
+            script {
+                allure([
                         includeProperties: false,
                         jdk: '',
                         properties: [],
@@ -34,5 +35,4 @@ pipeline {
                 }
             }
         }
-    }
-}
+     }
