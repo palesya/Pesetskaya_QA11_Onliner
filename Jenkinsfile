@@ -34,6 +34,7 @@ pipeline {
                 }
             }
         }
+    }
         post('Publish report') {
         always {
         script { allure([ includeProperties: false, jdk: '', properties: [], reportBuildPolicy: 'ALWAYS', results: [[path: './allure-results']] ]) }
