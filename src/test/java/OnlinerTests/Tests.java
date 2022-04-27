@@ -63,18 +63,4 @@ public class Tests extends BaseTest {
                 .checkMessageAfterRemove();
     }
 
-    @Test(description = "Check registration with password with spaces at the beginning/end", priority = 7)
-    public void checkPasswordWithSpaces() {
-        get(CatalogPage.class).clickEnterButton()
-                .goToRegistrationPage();
-        get(RegisterPage.class)
-                .enterEmail("email")
-                .enterPasswordAndRepeatPasswordWithSpaces()
-                .checkCheckbox()
-                .clickSubmitButton()
-                .checkErrorForPasswordLength()
-                .screenshot()
-                .countSymbolsInPasswordMessage();
-    }
-
 }
