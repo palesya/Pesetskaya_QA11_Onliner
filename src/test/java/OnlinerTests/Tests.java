@@ -18,7 +18,7 @@ public class Tests extends BaseTest {
         get(LoginPage.class).checkAuthenticationFormIsOpened();
     }
 
-    /*@Test(description = "Check error appears when login with empty email", priority = 2, dependsOnMethods = "checkCatalogPage")
+    @Test(description = "Check error appears when login with empty email", priority = 2, dependsOnMethods = "checkCatalogPage")
     public void checkLoginWithEmptyName() {
         get(CatalogPage.class).clickEnterButton();
         get(LoginPage.class).enterPassword("password")
@@ -61,7 +61,7 @@ public class Tests extends BaseTest {
         get(CatalogPage.class).clickCartButton();
         get(CartPage.class).clickRemoveButton()
                 .checkMessageAfterRemove();
-    }*/
+    }
 
 }
 
