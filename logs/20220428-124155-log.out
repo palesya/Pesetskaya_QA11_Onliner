@@ -1,0 +1,13 @@
+2022-04-28 12:41:58.792 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-28 12:42:01.701 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //li[@data-id='3']
+2022-04-28 12:42:01.832 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'Уборка')]
+2022-04-28 12:42:01.984 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='dropdown'] [href$='vacuumcleaner']
+2022-04-28 12:42:04.725 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*=product] [class*=image]
+2022-04-28 12:42:06.688 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'В корзину')]
+2022-04-28 12:42:06.889 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='control'] [class$='recommended__button']
+2022-04-28 12:42:09.656 [TestNG-tests-1] PageObjects.BasePage.compareCurrentUrlWithExpected(BasePage.java:85) - Compare current url https://cart.onliner.by/
+2022-04-28 12:42:09.667 [TestNG-tests-1] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='ammount']
+2022-04-28 12:42:09.786 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-28 12:42:11.031 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [title='Корзина']
+2022-04-28 12:42:11.902 [TestNG-tests-1] PageObjects.BasePage.compareCurrentUrlWithExpected(BasePage.java:85) - Compare current url https://cart.onliner.by/
+2022-04-28 12:42:12.111 [TestNG-tests-1] PageObjects.BasePage.wait(BasePage.java:97) - Wait for By.cssSelector: div[class$='remove'] div a

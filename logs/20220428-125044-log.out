@@ -1,0 +1,6 @@
+2022-04-28 12:50:47.480 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-28 12:50:50.900 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //li[@data-id='3']
+2022-04-28 12:50:51.055 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'Уборка')]
+2022-04-28 12:50:51.172 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='dropdown'] [href$='vacuumcleaner']
+2022-04-28 12:50:53.772 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*=product] [class*=image]
+2022-04-28 12:50:54.182 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'В корзину')]

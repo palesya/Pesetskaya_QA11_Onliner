@@ -1,0 +1,14 @@
+2022-04-28 12:39:50.236 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-28 12:39:52.981 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //li[@data-id='3']
+2022-04-28 12:39:53.107 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'Уборка')]
+2022-04-28 12:39:53.273 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='dropdown'] [href$='vacuumcleaner']
+2022-04-28 12:39:55.931 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*=product] [class*=image]
+2022-04-28 12:39:58.384 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'В корзину')]
+2022-04-28 12:39:58.510 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='control'] [class$='recommended__button']
+2022-04-28 12:40:00.843 [TestNG-tests-1] PageObjects.BasePage.compareCurrentUrlWithExpected(BasePage.java:85) - Compare current url https://cart.onliner.by/
+2022-04-28 12:40:00.854 [TestNG-tests-1] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='ammount']
+2022-04-28 12:40:01.195 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-28 12:40:02.359 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [title='Корзина']
+2022-04-28 12:40:03.262 [TestNG-tests-1] PageObjects.BasePage.compareCurrentUrlWithExpected(BasePage.java:85) - Compare current url https://cart.onliner.by/
+2022-04-28 12:40:03.525 [TestNG-tests-1] PageObjects.Onliner.CartPage.clickRemoveButton(CartPage.java:23) - Remove button clicked
+2022-04-28 12:40:03.572 [TestNG-tests-1] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='extra']

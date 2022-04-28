@@ -1,0 +1,15 @@
+2022-04-28 12:44:05.284 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-28 12:44:08.090 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //li[@data-id='3']
+2022-04-28 12:44:08.235 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'Уборка')]
+2022-04-28 12:44:08.383 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='dropdown'] [href$='vacuumcleaner']
+2022-04-28 12:44:11.387 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*=product] [class*=image]
+2022-04-28 12:44:13.680 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.xpath: //*[contains(text(),'В корзину')]
+2022-04-28 12:44:13.860 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [class*='control'] [class$='recommended__button']
+2022-04-28 12:44:16.961 [TestNG-tests-1] PageObjects.BasePage.compareCurrentUrlWithExpected(BasePage.java:85) - Compare current url https://cart.onliner.by/
+2022-04-28 12:44:16.972 [TestNG-tests-1] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='ammount']
+2022-04-28 12:44:17.935 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:37) - Open page https://catalog.onliner.by/
+2022-04-28 12:44:19.227 [TestNG-tests-1] PageObjects.BasePage.clickButton(BasePage.java:58) - Click on button By.cssSelector: [title='Корзина']
+2022-04-28 12:44:20.464 [TestNG-tests-1] PageObjects.BasePage.compareCurrentUrlWithExpected(BasePage.java:85) - Compare current url https://cart.onliner.by/
+2022-04-28 12:44:20.607 [TestNG-tests-1] PageObjects.BasePage.wait(BasePage.java:97) - Wait for By.cssSelector: div[class$='remove'] div a
+2022-04-28 12:44:30.650 [TestNG-tests-1] PageObjects.Onliner.CartPage.clickRemoveButton(CartPage.java:25) - Remove button clicked
+2022-04-28 12:45:25.859 [TestNG-tests-1] PageObjects.BasePage.getText(BasePage.java:80) - Get text of element: By.cssSelector: [class$='extra']
