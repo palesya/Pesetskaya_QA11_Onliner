@@ -1,2 +1,0 @@
-2022-04-27 12:28:54.219 [TestNG-tests-1] PageObjects.BasePage.open(BasePage.java:43) - Open page https://yandex.by/images/
-2022-04-27 14:55:34.129 [TestNG-tests-1] PageObjects.BasePage.wait(BasePage.java:103) - Wait for By.cssSelector: [class$='yes'] [class*='title']

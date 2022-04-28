@@ -81,12 +81,6 @@ public abstract class BasePage {
         return getWebElement(element).getText();
     }
 
-    protected BasePage moveCursorToRight(int numberOfMove) {
-        Actions action = new Actions(driver);
-        action.moveByOffset(numberOfMove, 0).perform();
-        return this;
-    }
-
     public BasePage compareCurrentUrlWithExpected(String expectedUrl) {
         log.debug("Compare current url " + driver.getCurrentUrl());
         Assert.assertEquals(driver.getCurrentUrl(), expectedUrl);
