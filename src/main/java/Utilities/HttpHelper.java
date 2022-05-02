@@ -12,7 +12,7 @@ import java.net.http.HttpResponse;
 
 public abstract class HttpHelper {
 
-    protected HttpRequest getRequest(String URI) throws URISyntaxException {
+    private HttpRequest getRequest(String URI) throws URISyntaxException {
        return HttpRequest
                 .newBuilder()
                 .uri(new URI(URI))
@@ -29,12 +29,12 @@ public abstract class HttpHelper {
                 .build();
     }
 
-    protected JsonObject getJsonObjectFromResponse(HttpResponse<String> response) {
+    protected JsonObject getJsonObjFromResponse(HttpResponse<String> response) {
         Gson gson = new Gson();
         return gson.fromJson(response.body(), JsonObject.class);
     }
 
-    protected JsonObject getFirstObjectOfArray(JsonObject object, String member) {
+    protected JsonObject getFirstObjOfArray(JsonObject object, String member) {
         return object.getAsJsonArray(member).get(0).getAsJsonObject();
     }
 
@@ -46,5 +46,13 @@ public abstract class HttpHelper {
         HttpClient httpClient = HttpClient.newHttpClient();
         return httpClient.send(request, HttpResponse.BodyHandlers.ofString());
     }
+
+    protected JsonObject getObjFromGetResponse(String uri) throws URISyntaxException, IOException, InterruptedException {
+        HttpRequest catalog = getRequest(uri);
+        HttpResponse<String> responseCatalog = getStringResponse(catalog);
+        return getJsonObjFromResponse(responseCatalog);
+    }
+
+
 
 }
