@@ -1,6 +1,6 @@
 package BaseObjects;
 
-import TestNGUtils.Listener;
+import Utilities.Listener;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;

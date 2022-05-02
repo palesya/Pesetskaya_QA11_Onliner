@@ -1,0 +1,7 @@
+{
+  "position_id": "{{position_id}}",
+  "product_id": "{{product_id}}",
+  "product_key": "{{product_key}}",
+  "shop_id": "{{shop_id}}",
+  "quantity": 1
+}

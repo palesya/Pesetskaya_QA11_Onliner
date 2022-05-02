@@ -1,4 +1,4 @@
-package TestNGUtils;
+package Utilities;
 
 import Properties.PropertyReader;
 import com.codeborne.selenide.Configuration;

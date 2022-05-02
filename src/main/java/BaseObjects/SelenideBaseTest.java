@@ -1,7 +1,7 @@
 package BaseObjects;
 
 import Properties.PropertyReader;
-import TestNGUtils.ListenerSelenide;
+import Utilities.ListenerSelenide;
 import com.codeborne.selenide.Configuration;
 import org.testng.annotations.Listeners;
 

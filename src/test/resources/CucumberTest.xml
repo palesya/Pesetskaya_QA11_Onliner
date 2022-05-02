@@ -3,7 +3,7 @@
 <suite name="Onliver" parallel="tests">
     <parameter name="config" value="onliner"/>
     <listeners>
-        <listener class-name="TestNGUtils.Listener"/>
+        <listener class-name="Utilities.Listener"/>
     </listeners>
 
     <test name="Login Page">
