@@ -180,6 +180,12 @@
             <artifactId>jaxb-runtime</artifactId>
             <version>4.0.0-M4</version>
         </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.0.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
