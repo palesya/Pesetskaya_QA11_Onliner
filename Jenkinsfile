@@ -7,7 +7,6 @@ pipeline {
     }
     environment {
         SUITE = "src/test/resources/${params.Suite}.xml"
-        env.PATH = "C:\Windows\System32"
     }
 
     stages {
