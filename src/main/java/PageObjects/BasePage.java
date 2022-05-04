@@ -129,13 +129,6 @@ public abstract class BasePage {
         return dtf.format(localDateTime);
     }
 
-    public BasePage scrollToElement(By element) {
-        log.debug("Scroll to element"+element);
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView();", getWebElement(element));
-        return this;
-    }
-
     public BasePage scrollDown() {
         log.debug("Scroll Down");
         ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,document.body.scrollHeight)");
@@ -156,5 +149,10 @@ public abstract class BasePage {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    protected Integer countFoundElements(By element) {
+        log.debug("Count elements: " + element);
+        return driver.findElements(element).size();
     }
 }

@@ -33,7 +33,7 @@ public class CatalogPage extends BasePage {
     }
 
     public CatalogPage selectVacuumCleaner() {
-        Actions actions=new Actions(driver);
+        Actions actions = new Actions(driver);
         actions.moveToElement(getWebElement(vacuumcleaner));
         clickButton(vacuumcleaner);
         return this;
@@ -46,11 +46,11 @@ public class CatalogPage extends BasePage {
 
     public CatalogPage addToCart() {
         clickButton(addToCartButton);
+        pause(2);
         return this;
     }
 
     public CatalogPage goToCart() {
-        wait(goToCartButton);
         clickButton(goToCartButton);
         compareCurrentUrlWithExpected("https://cart.onliner.by/");
         return this;
@@ -59,13 +59,6 @@ public class CatalogPage extends BasePage {
     public CatalogPage clickCartButton() {
         clickButton(cartButton);
         compareCurrentUrlWithExpected("https://cart.onliner.by/");
-        return this;
-    }
-
-    public CatalogPage goToCurrencyPage() {
-        wait(currency);
-        clickButton(currency);
-        compareCurrentUrlWithExpected("https://kurs.onliner.by/");
         return this;
     }
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Onliner" parallel="tests" thread-count="2">
+    <parameter name="config" value="onliner"/>
+
+    <test name="FIREFOX">
+        <parameter name="browser" value="FIREFOX" />
+        <classes>
+            <class name="OnlinerTests.Tests"/>
+        </classes>
+    </test>
+
+    <test name="Chrome">
+        <parameter name="browser" value= "CHROME" />
+        <classes>
+            <class name="OnlinerTests.Tests"/>
+        </classes>
+    </test>
+
+</suite>

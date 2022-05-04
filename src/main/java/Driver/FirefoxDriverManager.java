@@ -9,9 +9,10 @@ public class FirefoxDriverManager extends DriverManager{
     @Override
     public void createDriver() {
         WebDriverManager.firefoxdriver().setup();
-        FirefoxOptions firefoxOptions=new FirefoxOptions();
-        firefoxOptions.addArguments("start-maximized");
-        WebDriver webDriver=new FirefoxDriver(firefoxOptions);
+        FirefoxOptions options=new FirefoxOptions();
+        options.addArguments("--start-fullscreen");
+        WebDriver webDriver=new FirefoxDriver(options);
+        webDriver.manage().window().maximize();
         driver.set(webDriver);
     }
 }

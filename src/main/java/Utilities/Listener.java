@@ -22,10 +22,13 @@ public class Listener implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
-        System.setProperty("logger_time",getSimpleDate());
+        System.setProperty("logger_time", getSimpleDate());
         this.context = context;
         new PropertyReader(context.getSuite().getParameter("config") == null ? System.getProperty("config") : context.getSuite().getParameter("config"));
-        this.driverManager = DriverManagerFactory.getManager(DriverManagerType.valueOf(getProperties().getProperty("browser")));
+        this.driverManager = DriverManagerFactory.getManager(DriverManagerType.valueOf(
+                context.getCurrentXmlTest().getParameter("browser") == null ?
+                        getProperties().getProperty("browser") :
+                        context.getCurrentXmlTest().getParameter("browser")));
         this.properties = PropertyReader.getProperties();
         this.driver = DriverManager.getDriver();
     }
