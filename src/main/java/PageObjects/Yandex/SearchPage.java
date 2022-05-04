@@ -29,6 +29,7 @@ public class SearchPage extends BasePage {
         actions.sendKeys("v");
         actions.keyUp(Keys.CONTROL);
         actions.build().perform();
+        pause(3);
         wait(title);
         return this;
     }

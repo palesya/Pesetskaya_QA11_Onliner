@@ -2,6 +2,7 @@ package PageObjects.Onliner;
 
 import PageObjects.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 
 public class CatalogPage extends BasePage {
     private By enterButton = By.cssSelector("div[class$=text]");
@@ -17,7 +18,6 @@ public class CatalogPage extends BasePage {
 
     public CatalogPage clickEnterButton() {
         clickButton(enterButton);
-        log.debug("Enter button was clicked.");
         return this;
     }
 
@@ -27,11 +27,14 @@ public class CatalogPage extends BasePage {
     }
 
     public CatalogPage selectCleaning() {
+        wait(cleaning);
         clickButton(cleaning);
         return this;
     }
 
     public CatalogPage selectVacuumCleaner() {
+        Actions actions=new Actions(driver);
+        actions.moveToElement(getWebElement(vacuumcleaner));
         clickButton(vacuumcleaner);
         return this;
     }
@@ -47,6 +50,7 @@ public class CatalogPage extends BasePage {
     }
 
     public CatalogPage goToCart() {
+        wait(goToCartButton);
         clickButton(goToCartButton);
         compareCurrentUrlWithExpected("https://cart.onliner.by/");
         return this;

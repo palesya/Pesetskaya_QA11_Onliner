@@ -1,6 +1,8 @@
 package CucumberSteps.Onliner;
 
+
 import BaseObjects.BaseTest;
+import Driver.ChromeDriverManager;
 import PageObjects.Onliner.CatalogPage;
 import PageObjects.Onliner.ProductsPage;
 import io.cucumber.java.en.And;
@@ -8,11 +10,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-
 public class Search_Steps extends BaseTest {
 
     @Given("i load catalog page")
     public void openCatalogPage() {
+        ChromeDriverManager.getDriver();
         get(CatalogPage.class).open();
     }
 

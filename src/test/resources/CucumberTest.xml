@@ -2,8 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Onliver" parallel="tests">
     <parameter name="config" value="onliner"/>
+
     <listeners>
-        <listener class-name="Utilities.Listener"/>
+        <listener class-name="Utilities.Listener"></listener>
     </listeners>
 
     <test name="Login Page">

@@ -4,6 +4,7 @@ import PageObjects.BasePage;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
+
 public class LoginPage extends BasePage {
     private By authenticationField = By.cssSelector("[class='auth-entry']");
     private By email = By.cssSelector("input[placeholder$=e-mail]");
@@ -29,15 +30,17 @@ public class LoginPage extends BasePage {
     }
 
     public LoginPage checkErrorForEmptyEmail() {
+        wait(errorWhenEmptyEmail);
         Assert.assertTrue(isElementExists(errorWhenEmptyEmail));
         compareErrorWithExpected(errorWhenEmptyEmail, "errorForEmptyEmail");
         log.debug("Check error for empty email.");
         return this;
     }
 
-    public LoginPage clickSubmitButton() {
+    public LoginPage clickSubmitButton() throws InterruptedException {
         clickButton(submitButton);
         log.debug("Submit button was clicked.");
+        Thread.sleep(1000);
         return this;
     }
 }

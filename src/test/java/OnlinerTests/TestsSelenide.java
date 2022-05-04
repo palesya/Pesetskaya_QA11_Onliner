@@ -44,6 +44,4 @@ public class TestsSelenide extends SelenideBaseTest {
                         .withPassword("11111111111111111111111111111111111111111111111111111111111111111").build()}
         };
     }
-
-
 }

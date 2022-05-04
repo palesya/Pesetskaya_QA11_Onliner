@@ -18,8 +18,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
-
-import static BaseObjects.DriverCreation.getDriver;
+import static Driver.DriverManager.getDriver;
 
 public abstract class BasePage {
     public WebDriver driver;
@@ -99,7 +98,7 @@ public abstract class BasePage {
 
     protected BasePage wait(By element) {
         log.debug("Wait for " + element);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.visibilityOf(getWebElement(element)));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
         return this;
@@ -148,5 +147,14 @@ public abstract class BasePage {
         ArrayList<String> tabs = new ArrayList(driver.getWindowHandles());
         driver.close();
         driver.switchTo().window(tabs.get(1));
+    }
+
+    protected void pause(long seconds) {
+        log.debug("Pause for seconds: " + seconds);
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -19,7 +19,7 @@ public class Tests extends BaseTest {
     }
 
     @Test(description = "Check error appears when login with empty email", priority = 2, dependsOnMethods = "checkCatalogPage")
-    public void checkLoginWithEmptyName() {
+    public void checkLoginWithEmptyName() throws InterruptedException {
         get(CatalogPage.class).clickEnterButton();
         get(LoginPage.class).enterPassword("password")
                 .clickSubmitButton()

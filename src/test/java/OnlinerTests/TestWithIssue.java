@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class TestWithIssue extends BaseTest {
     @Test(description = "Check registration with password with spaces at the beginning/end", priority = 7)
-    public void checkPasswordWithSpaces() {
+    public void checkPasswordWithSpaces() throws InterruptedException {
         get(CatalogPage.class).open();
         get(CatalogPage.class).clickEnterButton()
                 .goToRegistrationPage();
