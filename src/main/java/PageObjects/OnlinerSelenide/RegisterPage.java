@@ -5,6 +5,7 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import lombok.extern.log4j.Log4j;
 import org.testng.Assert;
+
 import java.util.Arrays;
 
 import static Properties.PropertyReader.getProperties;
@@ -20,13 +21,13 @@ public class RegisterPage {
     SelenideElement errorForPasswordLength = $("[class*='description_error']");
     SelenideElement passwordDescription = $("[class*='securebox'] [class*='primary']");
     SelenideElement submitButton = $(byXpath("//div/*[@type='submit']"));
-    SelenideElement goToGmailButton=$("[href='https://gmail.com/']");
+    SelenideElement goToGmailButton = $("[class*='auth-button']");
 
 
     public RegisterPage enterPasswordAndRepeatPassword(String password) {
         passwordField.sendKeys(password);
         passwordRepeat.sendKeys(password);
-        log.debug("Password and RepeatPassword entered "+password);
+        log.debug("Password and RepeatPassword entered " + password);
         return this;
     }
 
@@ -39,7 +40,7 @@ public class RegisterPage {
     public RegisterPage checkErrorForPasswordLength() {
         errorForPasswordLength.shouldBe(Condition.visible);
         Assert.assertEquals(errorForPasswordLength.getText(), getProperties().getProperty("errorForPasswordLength"));
-        log.debug("Error appeared "+ errorForPasswordLength.getText());
+        log.debug("Error appeared " + errorForPasswordLength.getText());
         return this;
     }
 
@@ -52,7 +53,7 @@ public class RegisterPage {
 
     public RegisterPage enterEmail(String property) {
         emailField.sendKeys(property);
-        log.debug("Email entered "+property);
+        log.debug("Email entered " + property);
         return this;
     }
 
@@ -73,6 +74,8 @@ public class RegisterPage {
     public RegisterPage checkSuccessRegistration() {
         submitButton.shouldBe(Condition.disappear);
         goToGmailButton.shouldBe(Condition.appear);
+        String actualText = goToGmailButton.getText();
+        Assert.assertTrue(actualText.contains("Перейти в почту"));
         log.debug("Check success registration.");
         return this;
     }

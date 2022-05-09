@@ -13,7 +13,7 @@ public class Upload extends BaseTest {
         get(SearchPage.class).open();
     }
 
-    @Test(description = "Check if Catalog page is opened", priority = 1)
+    @Test(description = "Check onliner could be found by logo image.", priority = 1)
     public void checkCatalogPage() throws InterruptedException {
         get(SearchPage.class).uploadPicture()
                 .checkIfLinkIsFound()

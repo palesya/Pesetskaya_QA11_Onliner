@@ -13,7 +13,6 @@ public class CatalogPage extends BasePage {
     private By addToCartButton = By.xpath("//*[contains(text(),'В корзину')]");
     private By goToCartButton = By.cssSelector("[class*='control'] [class$='recommended__button']");
     private By cartButton = By.cssSelector("[title='Корзина']");
-    private By currency = By.cssSelector("a[class$='link'][href*='kurs']");
     private By registrationButton = By.cssSelector("[href$='registration']");
 
     public CatalogPage clickEnterButton() {

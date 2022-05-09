@@ -12,7 +12,7 @@ public class Tests extends BaseTest {
         get(CatalogPage.class).open();
     }
 
-    @Test(description = "Check if Catalog page is opened", priority = 1)
+    @Test(description = "Check if Login page is opened", priority = 1)
     public void checkCatalogPage() {
         get(CatalogPage.class).clickEnterButton();
         get(LoginPage.class).checkAuthenticationFormIsOpened();
