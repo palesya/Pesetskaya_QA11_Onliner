@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "eb63e931-9d65-43c6-a6db-18c7e44778dc",
+		"name": "Refrigirators",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fridges catalog",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData=pm.response.json();\r",
+							"\r",
+							"const id=jsonData.products[0].id\r",
+							"const key=jsonData.products[0].key\r",
+							"const name=jsonData.products[0].name\r",
+							"const extended_name=jsonData.products[0].extended_name\r",
+							"\r",
+							"pm.collectionVariables.set(\"product_id\",id);\r",
+							"pm.collectionVariables.set(\"product_key\",key);\r",
+							"pm.collectionVariables.set(\"product_name\",name);\r",
+							"pm.collectionVariables.set(\"extended_name\",extended_name);\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "host",
+						"value": "catalog.onliner.by"
+					}
+				],
+				"url": {
+					"raw": "https://catalog.onliner.by/sdapi/catalog.api/search/refrigerator?mfr[0]=samsung&color[0]=black",
+					"protocol": "https",
+					"host": [
+						"catalog",
+						"onliner",
+						"by"
+					],
+					"path": [
+						"sdapi",
+						"catalog.api",
+						"search",
+						"refrigerator"
+					],
+					"query": [
+						{
+							"key": "mfr[0]",
+							"value": "samsung"
+						},
+						{
+							"key": "color[0]",
+							"value": "black"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Positions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData=pm.response.json();\r",
+							"\r",
+							"const position_id=jsonData.positions.primary[0].id\r",
+							"const shop_id=jsonData.positions.primary[0].shop_id\r",
+							"\r",
+							"\r",
+							"pm.collectionVariables.set(\"position_id\",position_id);\r",
+							"pm.collectionVariables.set(\"shop_id\",shop_id);\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "host",
+						"value": "catalog.onliner.by"
+					}
+				],
+				"url": {
+					"raw": "https://catalog.onliner.by/sdapi/shop.api/products/{{product_key}}/positions",
+					"protocol": "https",
+					"host": [
+						"catalog",
+						"onliner",
+						"by"
+					],
+					"path": [
+						"sdapi",
+						"shop.api",
+						"products",
+						"{{product_key}}",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData=pm.response.json();\r",
+							"\r",
+							"const cart_id=jsonData.cart_id\r",
+							"\r",
+							"pm.collectionVariables.set(\"cart_id\",cart_id);\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "host",
+						"value": "catalog.onliner.by"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"position_id\": \"{{position_id}}\",\r\n    \"product_id\": \"{{product_id}}\",\r\n    \"product_key\": \"{{product_key}}\",\r\n    \"shop_id\": \"{{shop_id}}\",\r\n    \"quantity\": 1\r\n}"
+				},
+				"url": {
+					"raw": "https://catalog.onliner.by/sdapi/cart.api/detached-cart/add/",
+					"protocol": "https",
+					"host": [
+						"catalog",
+						"onliner",
+						"by"
+					],
+					"path": [
+						"sdapi",
+						"cart.api",
+						"detached-cart",
+						"add",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get bin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const jsonData=pm.response.json();\r",
+							"pm.test(\"Check name of added product\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.position_groups[0].positions[0].product.name).to.eql(pm.collectionVariables.get(\"product_name\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://catalog.onliner.by/sdapi/cart.api/v2/detached-cart/{{cart_id}}",
+					"protocol": "https",
+					"host": [
+						"catalog",
+						"onliner",
+						"by"
+					],
+					"path": [
+						"sdapi",
+						"cart.api",
+						"v2",
+						"detached-cart",
+						"{{cart_id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "product_id",
+			"value": ""
+		},
+		{
+			"key": "product_key",
+			"value": ""
+		},
+		{
+			"key": "product_name",
+			"value": ""
+		},
+		{
+			"key": "position_id",
+			"value": ""
+		},
+		{
+			"key": "shop_id",
+			"value": ""
+		},
+		{
+			"key": "cart_id",
+			"value": ""
+		},
+		{
+			"key": "extended_name",
+			"value": ""
+		}
+	]
+}

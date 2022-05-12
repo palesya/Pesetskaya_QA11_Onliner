@@ -32,7 +32,7 @@ public class LoginPage extends BasePage {
     public LoginPage checkErrorForEmptyEmail() {
         wait(errorWhenEmptyEmail);
         Assert.assertTrue(isElementExists(errorWhenEmptyEmail));
-        compareErrorWithExpected(errorWhenEmptyEmail, "errorForEmptyEmail");
+        compareTextWithExpected(errorWhenEmptyEmail, "errorForEmptyEmail");
         log.debug("Check error for empty email.");
         return this;
     }
@@ -40,7 +40,7 @@ public class LoginPage extends BasePage {
     public LoginPage clickSubmitButton() throws InterruptedException {
         clickButton(submitButton);
         log.debug("Submit button was clicked.");
-        Thread.sleep(1000);
+        pause(1);
         return this;
     }
 }

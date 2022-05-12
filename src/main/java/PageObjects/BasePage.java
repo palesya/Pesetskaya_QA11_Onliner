@@ -41,19 +41,17 @@ public abstract class BasePage {
         return this;
     }
 
-    public BasePage open(String url) {
-        log.debug("Open page " + url);
-        driver.get(url);
-        return this;
-    }
-
     protected WebElement getWebElement(By element) {
         return driver.findElement(element);
     }
 
     protected BasePage click(By element) {
         log.debug("Click on element " + element);
-        getWebElement(element).click();
+        try{
+        getWebElement(element).click();}
+        catch (WebDriverException e){
+            e.printStackTrace();
+        }
         return this;
     }
 
@@ -90,8 +88,8 @@ public abstract class BasePage {
         return this;
     }
 
-    public BasePage compareErrorWithExpected(By field, String expectedError) {
-        log.debug("Compare error " + getWebElement(field).getText().trim());
+    public BasePage compareTextWithExpected(By field, String expectedError) {
+        log.debug("Compare text " + getWebElement(field).getText().trim());
         Assert.assertEquals(getWebElement(field).getText().trim(), getProperty(expectedError));
         return this;
     }
@@ -151,8 +149,9 @@ public abstract class BasePage {
         }
     }
 
-    protected Integer countFoundElements(By element) {
-        log.debug("Count elements: " + element);
-        return driver.findElements(element).size();
+    protected void moveToElementAndClick(By element) {
+        log.debug("Move to element amd click"+element);
+        Actions actions = new Actions(driver);
+        actions.moveToElement(getWebElement(element)).click().build().perform();
     }
 }

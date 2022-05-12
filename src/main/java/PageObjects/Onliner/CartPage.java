@@ -2,7 +2,6 @@ package PageObjects.Onliner;
 
 import PageObjects.BasePage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import java.util.Arrays;
@@ -13,14 +12,14 @@ public class CartPage extends BasePage {
     private By removeButton = By.cssSelector("div[class$='remove'] div a");
     private By description = By.cssSelector("div[class*='complementary']");
     private By messageAfterRemove = By.cssSelector("[class$='extra']");
+    private By links = By.cssSelector("[class*='link_small']");
+    private By cartMessage = By.cssSelector("[class*='cart-message__title']");
 
     public CartPage clickRemoveButton() {
         log.debug("Click Remove button");
-        Actions actions = new Actions(driver);
-        actions.moveToElement(getWebElement(description)).click().perform();
-        wait(removeButton);
-        actions.moveToElement(getWebElement(removeButton)).perform();
-        actions.click().perform();
+        moveToElementAndClick(description);
+        pause(1);
+        moveToElementAndClick(removeButton);
         return this;
     }
 
@@ -34,4 +33,16 @@ public class CartPage extends BasePage {
         Assert.assertEquals(text[0].toString(), expectedNumber);
         return this;
     }
+
+    public CartPage clickClose() {
+        driver.findElements(links).get(1).click();
+        log.debug("Click close link");
+        return this;
+    }
+
+    public CartPage checkCartMessage() {
+        compareTextWithExpected(cartMessage, "messageFromCart");
+        return this;
+    }
+
 }

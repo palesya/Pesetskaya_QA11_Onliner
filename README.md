@@ -1,6 +1,5 @@
 # Pesetskaya_QA11_Onliner
 
-
 ## Description :
 Java project for test automation, covering functional, GUI, API testing of portal onliner.by.
 A Maven framework with Selenium tests written in Java with Allure reports of test results.

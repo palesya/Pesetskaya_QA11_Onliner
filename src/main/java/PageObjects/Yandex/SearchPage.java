@@ -17,7 +17,6 @@ public class SearchPage extends BasePage {
     private By searchField = By.cssSelector("[name='text']");
     private By link = By.cssSelector("[href*='forum.onliner.by']");
     private By title = By.cssSelector("[class='CbirItem-Title']");
-    private By foundData = By.cssSelector("[class*='name_sites']");
 
 
     public SearchPage uploadPicture() {
@@ -35,11 +34,13 @@ public class SearchPage extends BasePage {
     }
 
     public SearchPage checkIfLinkIsFound() throws InterruptedException {
-        Thread.sleep(1000);
+        pause(2);
+        scrollDown();
+        pause(2);
         scrollDown();
         Thread.sleep(1000);
         scrollDown();
-        click(link);
+        moveToElementAndClick(link);
         return this;
     }
 

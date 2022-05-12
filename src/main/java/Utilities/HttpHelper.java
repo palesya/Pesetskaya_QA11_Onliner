@@ -48,8 +48,8 @@ public abstract class HttpHelper {
     }
 
     protected JsonObject getObjFromGetResponse(String uri) throws URISyntaxException, IOException, InterruptedException {
-        HttpRequest catalog = getRequest(uri);
-        HttpResponse<String> responseCatalog = getStringResponse(catalog);
+        HttpRequest httpRequest = getRequest(uri);
+        HttpResponse<String> responseCatalog = getStringResponse(httpRequest);
         return getJsonObjFromResponse(responseCatalog);
     }
 

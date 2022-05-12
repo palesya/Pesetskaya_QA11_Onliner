@@ -6,8 +6,6 @@ import com.codeborne.selenide.SelenideElement;
 import lombok.extern.log4j.Log4j;
 import org.testng.Assert;
 
-import java.util.Arrays;
-
 import static Properties.PropertyReader.getProperties;
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
@@ -19,7 +17,6 @@ public class RegisterPage {
     SelenideElement passwordRepeat = $("[placeholder^='Повторите']");
     SelenideElement checkbox = $("span[class*='faux']");
     SelenideElement errorForPasswordLength = $("[class*='description_error']");
-    SelenideElement passwordDescription = $("[class*='securebox'] [class*='primary']");
     SelenideElement submitButton = $(byXpath("//div/*[@type='submit']"));
     SelenideElement goToGmailButton = $("[class*='auth-button']");
 
@@ -41,13 +38,6 @@ public class RegisterPage {
         errorForPasswordLength.shouldBe(Condition.visible);
         Assert.assertEquals(errorForPasswordLength.getText(), getProperties().getProperty("errorForPasswordLength"));
         log.debug("Error appeared " + errorForPasswordLength.getText());
-        return this;
-    }
-
-    public RegisterPage countSymbolsInPasswordMessage() {
-        Object[] text = Arrays.stream(passwordDescription.getText().split(" ")).toArray();
-        Object numberOfSymbolsInMessage = text[2];
-        Assert.assertEquals(numberOfSymbolsInMessage, "2");
         return this;
     }
 

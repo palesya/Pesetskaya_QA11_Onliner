@@ -29,7 +29,7 @@ public class RegisterPage extends BasePage {
 
     public RegisterPage checkErrorForPasswordLength() {
         wait(errorForPasswordLength);
-        compareErrorWithExpected(errorForPasswordLength, "errorForPasswordLength");
+        compareTextWithExpected(errorForPasswordLength, "errorForPasswordLength");
         return this;
     }
 
@@ -48,7 +48,7 @@ public class RegisterPage extends BasePage {
 
     public RegisterPage clickSubmitButton() throws InterruptedException {
         clickButton(submitButton);
-        Thread.sleep(1000);
+        pause(1);
         log.debug("Submit button was clicked.");
         return this;
     }

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class Upload extends BaseTest {
 
-   @BeforeMethod
+    @BeforeMethod
     public void openYandexPage() {
         get(SearchPage.class).open();
     }
@@ -17,9 +17,8 @@ public class Upload extends BaseTest {
     public void checkCatalogPage() throws InterruptedException {
         get(SearchPage.class).uploadPicture()
                 .checkIfLinkIsFound()
-                        .goToNewlyOpenedTab();
+                .goToNewlyOpenedTab();
         get(ForumPage.class).goToCatalogPage();
-        System.out.println("Hello");
     }
 
 }

@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Tests extends BaseTest {
 
-   @BeforeMethod
+    @BeforeMethod
     public void openCatalogPage() {
         get(CatalogPage.class).open();
     }
@@ -60,7 +60,9 @@ public class Tests extends BaseTest {
     public void checkRemoveFromCart() {
         get(CatalogPage.class).clickCartButton();
         get(CartPage.class).clickRemoveButton()
-                .checkMessageAfterRemove();
+                .checkMessageAfterRemove()
+                .clickClose()
+                .checkCartMessage();
     }
 
 }

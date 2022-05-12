@@ -38,6 +38,7 @@ public class ProductsPage extends BasePage {
     }
 
     public ProductsPage checkButtonNamesOnDialogWindow() {
+        wait(linkOnDialogWindow);
         Assert.assertEquals(getText(linkOnDialogWindow).trim(), getProperty("linkName"));
         Assert.assertEquals(getText(buttonOnDialogWindow).trim(), getProperty("ButtonName"));
         log.debug("Check button names on dialog window.");
