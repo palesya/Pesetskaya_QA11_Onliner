@@ -35,6 +35,7 @@ public class CartPage extends BasePage {
     }
 
     public CartPage clickClose() {
+        pause(1);
         driver.findElements(links).get(1).click();
         log.debug("Click close link");
         return this;
